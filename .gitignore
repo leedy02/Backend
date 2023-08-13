@@ -1,0 +1,5 @@
+*.log
+*.bak
+build/
+/TODO
+src/main/front-mcnp/
