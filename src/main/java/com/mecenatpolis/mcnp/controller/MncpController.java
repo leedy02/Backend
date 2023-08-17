@@ -1,21 +1,20 @@
 package com.mecenatpolis.mcnp.controller;
 
 import com.mecenatpolis.mcnp.DTO.TCodeFormDTO;
-import com.mecenatpolis.mcnp.impl.ServiceImpl;
+import com.mecenatpolis.mcnp.service.MncpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.nio.file.Paths;
 import java.nio.file.Files;
 
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/mecenatpolis")
-public class serviceController {
+public class MncpController {
 
     @Autowired
-    public ServiceImpl serviceImpl;
+    public MncpService serviceImpl;
     @PostMapping(value = "/form")
     public String postTCodeForm(@RequestBody TCodeFormDTO tCodeFormDTO)  {
 

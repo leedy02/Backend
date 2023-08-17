@@ -1,10 +1,8 @@
-package com.mecenatpolis.mcnp.impl;
+package com.mecenatpolis.mcnp.service;
 
 import com.mecenatpolis.mcnp.DTO.TCodeFormDTO;
 
-import java.io.File;
-
-public interface ServiceIfImpl {
+public interface MncpServiceInf {
     public void makeTerrafromCode(TCodeFormDTO tCodeFormDTO);
     public void transferTerraformCode();
 }
